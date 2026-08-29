@@ -3,9 +3,13 @@
 /* печать таблицы температур по Фаренгейту и Цельсию */
 int main(void)
 {
-    const int MIN_VALUE = 0;
-    const int MAX_VALUE = 300;
-    const int STEP = 20;
+    enum  
+    {
+        MIN_VALUE = 0,
+        MAX_VALUE = 300,
+        STEP = 20
+    };
+
     for (int degrees_fahrenheit = MAX_VALUE; degrees_fahrenheit >= MIN_VALUE; degrees_fahrenheit -= STEP)
     {
         /*°С = (5/9) * (°F - 32)*/
