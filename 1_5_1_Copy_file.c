@@ -1,13 +1,11 @@
 #include <stdio.h>
-/* копирование ввода на вывод; 1-я версия */
+/* копирование ввода на вывод; 1.1-я версия */
 int main(void)
 {
     int c;
-    c = getchar();
-    while (c != EOF)
+    while ((c = getchar()) != EOF)
     {
         putchar(c);
-        c = getchar();
     }
     return 0;
 }
